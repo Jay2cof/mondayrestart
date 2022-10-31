@@ -7,7 +7,7 @@ app = FastAPI()
 def family():
     return {"father": "son"}
 
-app.get("/job")
+@app.get("/job")
 def getJobs(): 
     return [{
         "id": "uid1",
@@ -18,3 +18,4 @@ def getJobs():
         "title": "Best Job",
         "description": "super working environment"
     }]
+
